@@ -1,0 +1,12 @@
+default:
+  image: node:12.13.0
+build-and-lint-job:
+  stage: build
+  script:
+     - echo "Installing dependencies ..."
+     - npm install
+     - echo "Running lint & fixing autofixable problems ..."
+     - npm run lint:fix
+cache:
+  paths:
+  - node_modules/

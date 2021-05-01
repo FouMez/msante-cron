@@ -1,0 +1,43 @@
+{
+  "name": "myelinesante",
+  "description": "Powerful API for healthtech data",
+  "keywords": [
+    "Myelinesante",
+    "teleconsultation",
+    "telemedicine"
+  ],
+  "author": "Firas Mezghani",
+  "version": "0.0.1",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon src/server",
+    "start": "node src/server",
+    "test": "cross-env NODE_ENV=test NODE_PATH=. mocha ./test/**/*.test.js --timeout 10000",
+    "lint": "./node_modules/.bin/eslint ./src",
+    "lint:fix": "./node_modules/.bin/eslint --fix src"
+  },
+  "engines": {
+    "node": "12.13.0"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "luxon": "^1.26.0",
+    "mongoose": "^5.2.6",
+    "mongoose-validator": "^2.1.0",
+    "node-cron": "^3.0.0",
+    "restify": "^8.5.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "chai": "^4.1.1",
+    "chai-http": "^4.0.0",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "nodemon": "^1.17.5",
+    "prettier": "^2.2.1",
+    "sinon": "^6.1.5"
+  }
+}
